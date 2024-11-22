@@ -33,7 +33,7 @@ if ($IsOOBEComplete) {
 # # # # # # # # # # # # # # # # # # # # ################ 
 # Download the answer file and point sysprep to it
 Write-Host "Your username and password will be: Admin/Admin" -ForegroundColor DarkGreen
-$uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml"
+$uri = "https://shorturl.at/QNklR"
 $answer = "$env:temp\UnattendOOBE.xml"
 (Invoke-RestMethod -Uri $uri).OuterXml | Out-File -FilePath $answer -Encoding utf8 -Force
 foreach ($letter in $((Get-Volume).DriveLetter)) {
