@@ -37,6 +37,7 @@ Write-Host "1. Regular Employees (https://example1.com)"
 Write-Host "2. For Sale (https://shorturl.at/QNklR)"
 Write-Host "3. Contractors (https://example3.com)"
 
+$uri = ""
 do {
     $choice = Read-Host "Enter the number of your choice (1, 2, or 3)"
     switch ($choice) {
@@ -45,13 +46,13 @@ do {
         "3" { $uri = "https://example3.com"; break }
         default { Write-Host "Invalid selection. Please choose 1, 2, or 3." -ForegroundColor Red }
     }
-} while ($true)
+} while (-not $uri)  # Loop until $uri is set
 
 Write-Host "Selected URI: $uri" -ForegroundColor Green
 
 # # # # # # # # # # # # # # # # # # # # ################ 
 # Download the answer file and point sysprep to it
-Write-Host "Your username and password will be: Admin/Admin" -ForegroundColor DarkGreen
+##Write-Host "Your username and password will be: Admin/Admin" -ForegroundColor DarkGreen
 $answer = "$env:temp\UnattendOOBE.xml"
 (Invoke-RestMethod -Uri $uri).OuterXml | Out-File -FilePath $answer -Encoding utf8 -Force
 foreach ($letter in $((Get-Volume).DriveLetter)) {
