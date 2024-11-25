@@ -34,16 +34,16 @@ if ($IsOOBEComplete) {
 # Select URI based on user input
 Write-Host "Select an answer file to use:" -ForegroundColor Cyan
 Write-Host "1. Set Hostname (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-win11pro-setHostname.xml)"
-Write-Host "2. For Sale (https://shorturl.at/QNklR)"
-Write-Host "3. Contractors (https://example3.com)"
+Write-Host "2. For Sale (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml)"
+Write-Host "3. Contractors (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/MemsTechTips-Autounattend.xml)"
 
 $uri = ""
 do {
     $choice = Read-Host "Enter the number of your choice (1, 2, or 3)"
     switch ($choice) {
         "1" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-win11pro-setHostname.xml"; break }
-        "2" { $uri = "https://shorturl.at/QNklR"; break }
-        "3" { $uri = "https://example3.com"; break }
+        "2" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml"; break }
+        "3" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/MemsTechTips-Autounattend.xml"; break }
         default { Write-Host "Invalid selection. Please choose 1, 2, or 3." -ForegroundColor Red }
     }
 } while (-not $uri)  # Loop until $uri is set
