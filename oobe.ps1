@@ -36,6 +36,7 @@ Write-Host "Select an answer file to use:" -ForegroundColor Cyan
 Write-Host "1. Set Hostname (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-win11pro-setHostname.xml)"
 Write-Host "2. For Sale (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml)"
 Write-Host "3. Contractors (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/MemsTechTips-Autounattend.xml)"
+Write-Host "3. EMPTY ()"
 
 $uri = ""
 do {
@@ -44,6 +45,7 @@ do {
         "1" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-win11pro-setHostname.xml"; break }
         "2" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml"; break }
         "3" { $uri = "https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/MemsTechTips-Autounattend.xml"; break }
+        "4" { $uri = ""; break }      
         default { Write-Host "Invalid selection. Please choose 1, 2, or 3." -ForegroundColor Red }
     }
 } while (-not $uri)  # Loop until $uri is set
