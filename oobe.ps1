@@ -36,7 +36,7 @@ Write-Host "Select an answer file to use:" -ForegroundColor Cyan
 Write-Host "1. Set Hostname (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-win11pro-setHostname.xml)"
 Write-Host "2. For Sale (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/autounattend-forsale.xml)"
 Write-Host "3. Contractors (https://raw.githubusercontent.com/ali2key/AutoDeploy/refs/heads/main/MemsTechTips-Autounattend.xml)"
-Write-Host "3. EMPTY ()"
+Write-Host "4. EMPTY ()"
 
 $uri = ""
 do {
