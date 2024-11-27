@@ -83,7 +83,7 @@
 		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<UserAccounts>
 				<AdministratorPassword>
-					<Value>MQAyADMANAA1ADYANwBBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+					<Value><##PASSWORD##></Value>
 					<PlainText>false</PlainText>
 				</AdministratorPassword>
 				<LocalAccounts>
@@ -91,7 +91,7 @@
 						<Name>DESKTOP</Name>
 						<Group>Administrators</Group>
 						<Password>
-							<Value>MQAyADMANAA1ADYANwBQAGEAcwBzAHcAbwByAGQA</Value>
+							<Value><##PASSWORD##></Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
@@ -102,7 +102,7 @@
 				<Enabled>true</Enabled>
 				<LogonCount>1</LogonCount>
 				<Password>
-					<Value>MQAyADMANAA1ADYANwBQAGEAcwBzAHcAbwByAGQA</Value>
+					<Value><##PASSWORD##></Value>
 					<PlainText>false</PlainText>
 				</Password>
 			</AutoLogon>
