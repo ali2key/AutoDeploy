@@ -91,7 +91,7 @@
 						<Name>DESKTOP</Name>
 						<Group>Administrators</Group>
 						<Password>
-							<Value><##PASSWORD##></Value>
+							<Value><UVdFUlRZMTIzIQ==></Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
@@ -102,7 +102,7 @@
 				<Enabled>true</Enabled>
 				<LogonCount>1</LogonCount>
 				<Password>
-					<Value><##PASSWORD##></Value>
+					<Value><UVdFUlRZMTIzIQ==></Value>
 					<PlainText>false</PlainText>
 				</Password>
 			</AutoLogon>
